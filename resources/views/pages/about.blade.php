@@ -34,6 +34,45 @@
                             </figcaption>
                         </figure>
                     </div>
+                    <div class="hidden sm:flex mt-48 relative text-base mx-auto max-w-prose lg:max-w-none">
+                        <figure>
+                            <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                <img class="rounded-lg shadow-lg object-cover object-center" src="https://source.unsplash.com/MChSQHxGZrQ?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="Some of the Unsplash team working together." width="1184" height="1376">
+                            </div>
+                            <figcaption class="mt-3 flex text-sm text-gray-500">
+                                <svg class="flex-none w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-2">Photograph by Annie Spratt</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="hidden sm:flex mt-48 relative text-base mx-auto max-w-prose lg:max-w-none">
+                        <figure>
+                            <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                <img class="rounded-lg shadow-lg object-cover object-center" src="https://source.unsplash.com/fIq0tET6llw?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="The focus" width="1184" height="1376">
+                            </div>
+                            <figcaption class="mt-3 flex text-sm text-gray-500">
+                                <svg class="flex-none w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-2">Photograph by Diego PH</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="hidden sm:flex mt-48 relative text-base mx-auto max-w-prose lg:max-w-none">
+                        <figure>
+                            <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                <img class="rounded-lg shadow-lg object-cover object-center" src="https://source.unsplash.com/z7oytXGI6VI?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="I feel like making dreams come true" width="1184" height="1376">
+                            </div>
+                            <figcaption class="mt-3 flex text-sm text-gray-500">
+                                <svg class="flex-none w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-2">Photograph by Peter Fogden</span>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
                 <div class="mt-8 lg:mt-0">
                     <div class="text-base max-w-prose mx-auto lg:max-w-none">
@@ -41,10 +80,20 @@
                     </div>
                     <div class="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1 text-justify pr-5">
                         <p>TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.</p>
-                        <p>For both crowdfunding models, overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.</p>
+                        <p>The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary.</p>
+                        <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, as there are still upkeep costs to maintain the platform, a platform fee of 2.5% may still be imposed to cover any operating costs.</p>
+                        <p>TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute funds raised. Progressive steps to decentralisation are required to balance the development and management needs of the platform.</p>
+
+                        <h3>Crowdfunding Models</h3>
+                        <p>For both crowdfunding models (Keep-It-All and All-Or-Nothing), overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.</p>
                         <p>In the Flexible (KIA) model, the project owner can claim funds at any time, and there are no refunds for supporters.</p>
                         <p>In the Fixed (AON) model, the project owner can only claim funds at the end of the project if the target has been reached. However, supporters can claim a refund if the project has failed to achieve its target by the end date.</p>
-                        <p>Like Indiegogo, project owners can either create a project based on the Flexible (KIA) model or the Fixed (AON) model.</p>
+                        <p>Small and scalable projects are more likely to be funded through the KIA model, while large and non-scalable projects are more likely to be funded through the AON model.</p>
+                        <p>Similar to Indiegogo, TezCrowd project owners have the flexibility to decide whether their crowdfunding project will be based on either the Flexible (KIA) model or the Fixed (AON) model.</p>
+                        <p>Reference: <a href="https://d1wqtxts1xzle7.cloudfront.net/64058657/6b70daa57c49c0cae93594a0892f8f4632e2-with-cover-page-v2.pdf?Expires=1629575774&Signature=g6tEbKrllidoSLb6E1bbhYZW1JSZj1I~9ABpJdr6iCEtE9eyc2vGgm3cz1xK42EhqrF1q5eIf2BghMQFgPYbiLSxm1pc1CJlnIOFBbbr9WHK7fYv6MzXDxLgXK~6ZkDYc0OPoX8Vbebe8n1lFFz3FQZF87wzbXOjfu2jjmOtpTEwNS-qyQt0T2U8WXdX8iw07xmLjCJjTcEI6qPkgb6XGh2E9Bx4o5wES5aU~B5-Qi8jTaiQlz2MlWnSGvBS9i1xqjaRwS74GIqjD0W-LKenGJmA2o3dEyXMlLptvX5nHx67kMDnVbt248rStZQKKNUpBw~YIAMlDFEeMRgsP-Ix-w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">Schwienbacher, A. (2000). Crowdfunding Models: Keep-it-All vs. All-or-Nothing. SSRN Electronic Journal.</a></p>
+
+                        <h3>Goals</h3>
+                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain. After that, the focus will shift to attract new members to be part of the DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.</p>
 
                         <h3>Demo</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
@@ -52,13 +101,46 @@
                         <p>Supporters of the project are also shown with their corresponding amount pledged by reading the smart contract's storage map (funders).</p>
                         <p>Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress.</p>
 
-                        <p>Future features for Phase 2 if people are keen about TezCrowd:</p>
+                        <h4>User Experience</h4>
+                        <p>This demo primarily focuses on the user experience in funding and supporting a project.</p>
+                        <p>To place more emphasis on the project details, the layout is kept simple and minimalistic with a main featured image (on the left) and a container showing the project data read from the smart contract storage (on the right).</p>
+                        <p>The pledge amount input has been validated on the client-side using regex to ensure only valid and positive integers or decimals are submitted. Examples of invalid amounts that will be rejected:</p>
+                        <ul>
+                            <li>abcdefgh</li>
+                            <li>1.23abcd</li>
+                            <li>abc1.23</li>
+                            <li>1.10.23</li>
+                            <li>23.</li>
+                            <li>.</li>
+                            <li>0</li>
+                            <li>0.00</li>
+                        </ul>
+
+                        <p>Flash messages will also appear depending on whether a wallet is connected, and the input pledge amount:</p>
+                        <ol>
+                            <li>Scenario: User is not connected and inputs invalid pledge amount</li>
+                            <p class="pl-7">Flash message requesting a valid amount. Pledge button will be disabled until user connects wallet.</p>
+                            <li>Scenario: User is not connected and inputs valid pledge amount.</li>
+                            <p class="pl-7">Flash message requesting user to connect his wallet first</p>
+                            <li>Scenario: User is connected and inputs invalid pledge amount</li>
+                            <p class="pl-7">Flash message requesting a valid amount.</p>
+                            <li>Scenario: User is connected and inputs valid pledge amount</li>
+                            <p class="pl-7">Flash message showing transaction is being processed by the blockchain. This could take up to 20 seconds. Upon confirmation of a successful transaction, the in-process flash message will be replaced with a successful flash message.</p>
+                        </ol>
+
+                        <h4>Future Considerations</h4>
+                        <p>Features planned for Phase 2 if enough people are keen about TezCrowd:</p>
                         <ul role="list">
                             <li>Creation of a project standard similar to the FA2 contract standard</li>
                             <li>Multiple projects creation and ledger system</li>
                             <li>Additional fields such as tags and categories</li>
                         </ul>
-                        <p>More advanced features such as a milestone tracker managed by a DAO or supporters of the project can be explored in future.</p>
+                        <p>As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.</p>
+                        <p>Furthermore, there is probably a need for additional features such as comments and favouriting unless third-party apps such as Discourse are used.</p>
+                        <p>My initial thoughts are to have a hybrid decentralised model where essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).</p>
+                        <p>A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency and efficiency of fees.</p>
+                        <p>More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.</p>
+
                         <h3>Who Made This</h3>
                         <p>TezCrowd is designed and built by <a href="https://twitter.com/timongty" target="_blank">@timongty</a>, an indie maker with other projects such as <a href="https://galleseum.com" target="_blank">Galleseum</a>, a blockchain-agnostic NFT gallery platform.</p>
                         <p>Frameworks and tools used:</p>

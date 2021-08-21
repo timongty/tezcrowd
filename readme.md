@@ -4,17 +4,37 @@ A decentralised crowdfunding platform for the community powered by the Tezos blo
 
 TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.
 
+The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary. 
+
+The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, as there are still upkeep costs to maintain the platform, a platform fee of 2.5% may still be imposed to cover any operating costs.
+
+TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute funds raised. Progressive steps to decentralisation are required to balance the development and management needs of the platform. 
+
+---
+
+**<h3>Goals</h3>**    
+
+For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain. After that, the focus will shift to attract new members to be part of the DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.
+
+---
+
 **<h3>Crowdfunding Models</h3>**
 
-For both crowdfunding models, overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.
+For both crowdfunding models (Keep-It-All and All-Or-Nothing), overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.
 
-In the Flexible (KIA) model, the project owner can claim funds at any time, and there are no refunds for supporters.
+In the Flexible (KIA) model, the project owner can claim funds at any time, and there are no refunds for supporters. 
 
 In the Fixed (AON) model, the project owner can only claim funds raised at the end of the project if the target goal has been reached. However, supporters can claim a refund if the project has failed to achieve its target goal by the end date.
 
-Similar to Indiegogo, project owners can create a project based on either the Flexible (KIA) model or the Fixed (AON) model.
+Small and scalable projects are more likely to be funded through the KIA model, while large and non-scalable projects are more likely to be funded through the AON model. 
 
-**<h3>Demo</h3>**
+Similar to Indiegogo, TezCrowd project owners have the flexibility to decide whether their crowdfunding project will be based on either the Flexible (KIA) model or the Fixed (AON) model.
+
+Reference: Schwienbacher, A. (2000). Crowdfunding Models: Keep-it-All vs. All-or-Nothing. SSRN Electronic Journal.
+
+---
+
+**<h3>Demo MVP</h3>**
 
 The demo site can be viewed at https://tezcrowd.com. 
 
@@ -26,13 +46,55 @@ Supporters of the project are also shown with their corresponding amount pledged
 
 Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress. 
 
-Future features for Phase 2 if people are keen about TezCrowd:
+**<h4>User Experience</h4>**
+
+This demo primarily focuses on the user experience in funding and supporting a project.
+
+To place more emphasis on the project details, the layout is kept simple and minimalistic with a main featured image (on the left) and a container showing the project data read from the smart contract storage (on the right). 
+
+The pledge amount input has been validated on the client-side using regex to ensure only valid and positive integers or decimals are submitted. Examples of invalid amounts that will be rejected: 
+
+    abcdefgh
+    1.23abcd
+    abc1.23
+    1.10.23
+    23.
+    .
+    0
+    0.00
+    
+Flash messages will appear depending on whether a wallet is connected, and the input pledge amount:
+    
+1. Scenario: User is not connected and inputs invalid pledge amount
+    - Flash message requesting a valid amount. Pledge button will be disabled until user connects wallet.  
+2. Scenario: User is not connected and inputs valid pledge amount.
+    - Flash message requesting user to connect his wallet first
+3. Scenario: User is connected and inputs invalid pledge amount
+    - Flash message requesting a valid amount.
+4. Scenario: User is connected and inputs valid pledge amount
+    - Flash message showing transaction is being processed by the blockchain. This could take up to 20 seconds. Upon confirmation of a successful transaction, the in-process flash message will be replaced with a successful flash message. 
+
+
+**<h4>Future Considerations</h4>**
+
+Features planned for Phase 2 if enough people are keen about TezCrowd:
 
     Creation of a project standard similar to the FA2 contract standard
     Multiple projects creation and ledger system
     Additional fields such as tags and categories
+    User profiles showing past projects supported
 
-More advanced features such as a milestone tracker managed by a DAO or supporters of the project can be explored in future.
+As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.
+
+Furthermore, there is probably a need for additional features such as comments and favouriting unless third-party apps such as Discourse are used.
+
+My initial thoughts are to have a hybrid decentralised model where essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).
+
+A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency and efficiency of fees.      
+
+More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.
+
+---
 
 **<h3>Smart Contract Entrypoints</h3>**
 
@@ -62,6 +124,8 @@ The crowdfunding smart contract has 4 entrypoints.
     
     Output: Send the amount contributed by the supporter back to his wallet.
 
+---
+
 **<h3>Who Made This</h3>**
 
 TezCrowd is designed and built by @timongty (https://twitter.com/timongty), an indie maker with other projects such as Galleseum, a blockchain-agnostic NFT gallery platform.
@@ -81,6 +145,8 @@ Old versions of contract addresses (for reference):
 
     v1: KT19wKxN27RvAjf4aWGCCpPDg5mBVxiJWKRE
     v2: KT1BKTEdxbJVQt7ZSPGg7wWYvVmotugsEUhm
+
+---
 
 **<h3>Initialising this project</h3>**
 
@@ -112,4 +178,11 @@ Main files for reference:
     /resources/views/partials               - partial files (flash messages, footer, nav etc)
     /routes/web.php                         - route file
     
-    
+Reference sites:
+
+- OpenTezos                     - https://opentezos.com/
+- SmartPy Docs and References   - https://smartpy.io/reference.html
+- Tezos Developer Portal        - https://tezos.b9lab.com/
+- Wiki Tezos Agora Portal       - https://wiki.tezosagora.org
+- Tezos Taquito                 - https://tezostaquito.io/docs/quick_start
+- Coinmonks: Claude Barde       - https://medium.com/coinmonks/build-a-tezos-dapp-using-taquito-and-the-beacon-sdk-692d7dc822aa
