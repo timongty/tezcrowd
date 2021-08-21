@@ -13,7 +13,7 @@
             <div class="flex flex-col w-full sm:w-1/3 sm:px-6 py-6 ">
 
                 <span class="text-gray-500 text-sm">Project #1</span>
-                <h2 class="title text-2xl font-semibold">Sample Project Title</h2>
+                <h2 class="title text-2xl font-semibold">Loading Project...</h2>
 
                 <div class="relative mt-3 pt-1">
                     <div class="flex mb-2 items-center justify-between">
