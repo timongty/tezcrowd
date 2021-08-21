@@ -93,7 +93,8 @@
                         <p>Reference: <a href="https://d1wqtxts1xzle7.cloudfront.net/64058657/6b70daa57c49c0cae93594a0892f8f4632e2-with-cover-page-v2.pdf?Expires=1629575774&Signature=g6tEbKrllidoSLb6E1bbhYZW1JSZj1I~9ABpJdr6iCEtE9eyc2vGgm3cz1xK42EhqrF1q5eIf2BghMQFgPYbiLSxm1pc1CJlnIOFBbbr9WHK7fYv6MzXDxLgXK~6ZkDYc0OPoX8Vbebe8n1lFFz3FQZF87wzbXOjfu2jjmOtpTEwNS-qyQt0T2U8WXdX8iw07xmLjCJjTcEI6qPkgb6XGh2E9Bx4o5wES5aU~B5-Qi8jTaiQlz2MlWnSGvBS9i1xqjaRwS74GIqjD0W-LKenGJmA2o3dEyXMlLptvX5nHx67kMDnVbt248rStZQKKNUpBw~YIAMlDFEeMRgsP-Ix-w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">Schwienbacher, A. (2000). Crowdfunding Models: Keep-it-All vs. All-or-Nothing. SSRN Electronic Journal.</a></p>
 
                         <h3>Goals</h3>
-                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain. After that, the focus will shift to attract new members to be part of the DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.</p>
+                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain.</p>
+                        <p>After that, the focus will shift to attract new members to be part of the TezCrowd DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.</p>
 
                         <h3>Demo</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
@@ -136,8 +137,9 @@
                             <li>Additional fields such as tags and categories</li>
                         </ul>
                         <p>As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.</p>
-                        <p>Furthermore, there is probably a need for additional features such as comments and favouriting unless third-party apps such as Discourse are used.</p>
-                        <p>My initial thoughts are to have a hybrid decentralised model where essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).</p>
+                        <p>It is also likely that this project content is subject to frequent changes and updates along the course of the crowdfunding duration.</p>
+                        <p>Furthermore, there is probably a need for additional features such as comments and favouriting to promote engagement with the project unless third-party apps such as Discourse are used.</p>
+                        <p>My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).</p>
                         <p>A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency and efficiency of fees.</p>
                         <p>More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.</p>
 

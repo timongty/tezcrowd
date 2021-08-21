@@ -14,7 +14,9 @@ TezCrowd will eventually be community-led with a DAO to collectively decide on n
 
 **<h3>Goals</h3>**    
 
-For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain. After that, the focus will shift to attract new members to be part of the DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.
+For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain. 
+
+After that, the focus will shift to attract new members to be part of the DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.
 
 ---
 
@@ -86,9 +88,11 @@ Features planned for Phase 2 if enough people are keen about TezCrowd:
 
 As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.
 
-Furthermore, there is probably a need for additional features such as comments and favouriting unless third-party apps such as Discourse are used.
+It is also likely that this project content is subject to frequent changes and updates along the course of the crowdfunding duration.
 
-My initial thoughts are to have a hybrid decentralised model where essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).
+Furthermore, there is probably a need for additional features such as comments and favouriting to promote engagement with the project unless third-party apps such as Discourse are used.
+
+My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).
 
 A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency and efficiency of fees.      
 
