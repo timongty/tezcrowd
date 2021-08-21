@@ -222,3 +222,9 @@ Reference sites:
     Tezos Developer Portal        - https://tezos.b9lab.com/
     Wiki Tezos Agora Portal       - https://wiki.tezosagora.org
     Coinmonks: Claude Barde       - https://medium.com/coinmonks/build-a-tezos-dapp-using-taquito-and-the-beacon-sdk-692d7dc822aa
+    
+--- 
+
+**<h3>License</h3>**
+
+This project is authored by @timongty and is free to be used as outlined in the MIT License.
