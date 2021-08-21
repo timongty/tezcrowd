@@ -72,12 +72,14 @@ Frameworks and tools used:
     Webpack, npm
 
 Contract Address deployed on Florence Testnet:
-KT1RjMpTDuSmoUj2gn2gaRpxqZPLkxk1VCu8
 
-Old versions of contract addresses:
+
+    v3: KT1RjMpTDuSmoUj2gn2gaRpxqZPLkxk1VCu8
+
+Old versions of contract addresses (for reference):
 
     v1: KT19wKxN27RvAjf4aWGCCpPDg5mBVxiJWKRE
-    v2: KT19wKxN27RvAjf4aWGCCpPDg5mBVxiJWKRE
+    v2: KT1BKTEdxbJVQt7ZSPGg7wWYvVmotugsEUhm
 
 **<h3>Initialising this project</h3>**
 
