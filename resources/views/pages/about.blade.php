@@ -169,6 +169,8 @@
                             <li>Additional fields such as tags and categories</li>
                             <li>User profiles showing past projects supported</li>
                             <li>DAO interface for user voting</li>
+                            <li>Pre-crowdfunding section to get community feedback before project starts</li>
+                            <li>Post-crowdfunding section to regularly build cohesiveness</li>
                         </ul>
                         <p>As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.</p>
                         <p>It is also likely that this project content is subject to frequent changes and updates along the course of the crowdfunding duration.</p>

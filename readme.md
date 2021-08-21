@@ -116,6 +116,8 @@ Features planned for Phase 2:
     Additional fields such as tags and categories
     User profiles showing past projects supported
     DAO interface for user voting 
+    Pre-crowdfunding section to get community feedback before project starts
+    Post-crowdfunding section to regularly build cohesiveness
 
 As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.
 
