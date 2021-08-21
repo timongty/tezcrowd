@@ -6,7 +6,7 @@ TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the
 
 The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary. 
 
-The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, as there are still upkeep costs to maintain the platform, a platform fee of 2.5% may still be imposed to cover any operating costs.
+The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, the platform may still impose a low fundraiser fee to cover maintenance and upkeep costs.
 
 TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute funds raised. Progressive steps to decentralisation are required to balance the development and management needs of the platform. 
 
@@ -44,9 +44,9 @@ There is one sample crowdfunding project with the Flexible (Keep-it-all) Model o
  
 Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected). 
 
-Supporters of the project are also shown with their corresponding amount pledged by reading the smart contract's storage map (funders).
+Supporters of the project are also shown with their corresponding total amount pledged (by reading the smart contract's storage map [funders]).
 
-Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress. 
+Once an amount has been successfully pledged with the transaction recorded on the blockchain, the crowdfunding project will be automatically updated with the new progress. 
 
 **<h4>User Experience</h4>**
 
@@ -79,7 +79,7 @@ Flash messages will appear depending on whether a wallet is connected, and the i
 
 **<h4>Future Considerations</h4>**
 
-Features planned for Phase 2 if enough people are keen about TezCrowd:
+Features planned for Phase 2 if people are keen about TezCrowd:
 
     Creation of a project standard similar to the FA2 contract standard
     Multiple projects creation and ledger system
@@ -184,9 +184,8 @@ Main files for reference:
     
 Reference sites:
 
-- OpenTezos                     - https://opentezos.com/
-- SmartPy Docs and References   - https://smartpy.io/reference.html
-- Tezos Developer Portal        - https://tezos.b9lab.com/
-- Wiki Tezos Agora Portal       - https://wiki.tezosagora.org
-- Tezos Taquito                 - https://tezostaquito.io/docs/quick_start
-- Coinmonks: Claude Barde       - https://medium.com/coinmonks/build-a-tezos-dapp-using-taquito-and-the-beacon-sdk-692d7dc822aa
+    OpenTezos                     - https://opentezos.com/
+    SmartPy Docs and References   - https://smartpy.io/reference.html
+    Tezos Developer Portal        - https://tezos.b9lab.com/
+    Wiki Tezos Agora Portal       - https://wiki.tezosagora.org
+    Coinmonks: Claude Barde       - https://medium.com/coinmonks/build-a-tezos-dapp-using-taquito-and-the-beacon-sdk-692d7dc822aa

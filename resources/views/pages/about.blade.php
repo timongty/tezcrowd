@@ -81,7 +81,7 @@
                     <div class="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1 text-justify pr-5">
                         <p>TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.</p>
                         <p>The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary.</p>
-                        <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, as there are still upkeep costs to maintain the platform, a platform fee of 2.5% may still be imposed to cover any operating costs.</p>
+                        <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, the platform may still impose a low fundraiser fee to cover maintenance and upkeep costs.</p>
                         <p>TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute funds raised. Progressive steps to decentralisation are required to balance the development and management needs of the platform.</p>
 
                         <h3>Crowdfunding Models</h3>
@@ -99,8 +99,8 @@
                         <h3>Demo</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
                         <p>Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected).</p>
-                        <p>Supporters of the project are also shown with their corresponding amount pledged by reading the smart contract's storage map (funders).</p>
-                        <p>Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress.</p>
+                        <p>Supporters of the project are also shown with their corresponding total amount pledged (by reading the smart contract's storage map [funders]).</p>
+                        <p>Once an amount has been successfully pledged with the transaction recorded on the blockchain, the crowdfunding project will be automatically updated with the new progress.</p>
 
                         <h4>User Experience</h4>
                         <p>This demo primarily focuses on the user experience in funding and supporting a project.</p>
@@ -130,7 +130,7 @@
                         </ol>
 
                         <h4>Future Considerations</h4>
-                        <p>Features planned for Phase 2 if enough people are keen about TezCrowd:</p>
+                        <p>Features planned for Phase 2 if people are keen about TezCrowd:</p>
                         <ul role="list">
                             <li>Creation of a project standard similar to the FA2 contract standard</li>
                             <li>Multiple projects creation and ledger system</li>
