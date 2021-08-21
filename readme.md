@@ -131,7 +131,9 @@ My preliminary approach is to adopt a hybrid decentralised model where only esse
 
 A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency (of key information) and efficiency of fees.      
 
-More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.
+We can also consider more advanced features such as a project milestone tracker to release funds managed by the DAO (or supporters of the individual project) as well as the integration of NFTs priced at fixed amounts into a crowdfunding project as a means to reward early supporters.
+
+These ideas and features can be explored and discussed with the community in future.
 
 ---
 

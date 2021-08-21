@@ -178,7 +178,8 @@
                         <p>However, the use of 3rd-party apps has the downside of making it inconvenient for users and decreasing their engagement with the platform.</p>
                         <p>My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements, such as the afore-mentioned comments and long-form project content, will be stored off-chain (e.g. in a mysql database).</p>
                         <p>A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency (of key information) and efficiency of fees.</p>
-                        <p>More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.</p>
+                        <p>We can also consider more advanced features such as a project milestone tracker to release funds managed by the DAO (or supporters of the individual project) as well as the integration of NFTs priced at fixed amounts into a crowdfunding project as a means to reward early supporters.</p>
+                        <p>These ideas and features can be explored and discussed with the community in future.</p>
 
                         <h3>Who Made This</h3>
                         <p>TezCrowd is designed and built by <a href="https://twitter.com/timongty" target="_blank">@timongty</a>, an indie maker with other projects such as <a href="https://galleseum.com" target="_blank">Galleseum</a>, a blockchain-agnostic NFT gallery platform.</p>
