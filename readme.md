@@ -8,17 +8,21 @@ TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the
 
 For both crowdfunding models, overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.
 
-In the Flexible (KIA) model, the project owner can claim funds at any time and there are no refunds for supporters.
+In the Flexible (KIA) model, the project owner can claim funds at any time, and there are no refunds for supporters.
 
-In the Fixed (AON) model, the project owner can only claim funds raised at the end of the project if the target goal has been reached. Supporters can claim a refund if the project has failed to achieve its target goal by the end date.
+In the Fixed (AON) model, the project owner can only claim funds raised at the end of the project if the target goal has been reached. However, supporters can claim a refund if the project has failed to achieve its target goal by the end date.
 
-Similar to Indiegogo, project owners can choose to either create a project based on the Flexible (KIA) model or the Fixed (AON) model.
+Like Indiegogo, project owners can either create a project based on the Flexible (KIA) model or the Fixed (AON) model.
 
-**<h3>MVP</h3>**
+**<h3>Demo</h3>**
 
-For this MVP, users are able to connect their wallets and support a project by pledging Tezos (using a testnet wallet for development purposes). The crowdfunding project will be updated with the new pledged total once the transaction is successful.
+The demo site can be viewed at https://tezcrowd.com. 
 
-The homepage is a demo of a sample Flexible (KIA) project created using the crowdfunding smart contract.
+There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo. 
+ 
+Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected). 
+
+Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress. 
 
 Future features for Phase 2 if people are keen about TezCrowd:
 

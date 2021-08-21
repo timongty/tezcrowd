@@ -18,9 +18,8 @@
 
             <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-1">
 
-                <div class="md:grid md:grid-cols-2 md:gap-4">
+                <div class="hidden md:grid md:grid-cols-2 md:gap-4">
                     <div>
-
 {{--                        <ul class="mt-4 space-y-4">--}}
 {{--                            <li>--}}
 {{--                                <a href="{{ route('about') }}" class="text-base font-aoki-regular text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-400">--}}
@@ -30,17 +29,15 @@
 {{--                        </ul>--}}
                     </div>
                 </div>
-                <div class="md:grid md:grid-cols-2 md:gap-4">
+                <div class="md:grid md:grid-cols-2 md:gap-4 pl-2">
                     <div class="mt-0">
 
                         <ul class="mt-4 space-y-4">
-
                             <li>
                                 <a href="{{ route('about') }}" class="text-base font-aoki-regular text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-400">
                                     About
                                 </a>
                             </li>
-
                         </ul>
 
                     </div>

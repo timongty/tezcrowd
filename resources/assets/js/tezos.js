@@ -103,6 +103,13 @@ async function homeProject(){
     $('.about').text(storage.about);
     $('.featured_image').attr('src', storage.image);
 
+    var cf_type = storage.cf_type;
+    if(cf_type == 'KIA'){
+        $('.cf_type').text('Flexible');
+    } else{
+        $('.cf_type').text('Fixed');
+    }
+
 }
 homeProject();
 

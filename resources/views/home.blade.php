@@ -4,22 +4,22 @@
 
     <div class="flex w-full px-10 py-8">
 
-        <div class="project_container flex flex-row w-full">
+        <div class="project_container flex flex-col sm:flex-row w-full">
 
-            <div class="flex w-2/3 pr-6">
-                <img src="https://source.unsplash.com/ABVE1cyT7hk" class="featured_image rounded-md w-full">
+            <div class="flex w-full sm:w-2/3 sm:pr-6">
+                <img src="https://source.unsplash.com/ABVE1cyT7hk" class="featured_image rounded-md w-full h-72 sm:h-auto">
             </div>
 
-            <div class="flex flex-col w-1/3 px-6 py-6 ">
+            <div class="flex flex-col w-full sm:w-1/3 sm:px-6 py-6 ">
 
                 <span class="text-gray-500 text-sm">Project #1</span>
-                <h2 class="title text-2xl font-semibold">What is Lorem Ipsum?</h2>
+                <h2 class="title text-2xl font-semibold">Sample Project Title</h2>
 
                 <div class="relative mt-3 pt-1">
                     <div class="flex mb-2 items-center justify-between">
                         <div>
                           <div class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
-                            <span class="amount_raised_percentage">XX%</span> Funded
+                              <span class="amount_raised_percentage">X%</span> Funded - <span class="cf_type">Fixed</span> Goal
                           </div>
                         </div>
                         <div class="text-right">

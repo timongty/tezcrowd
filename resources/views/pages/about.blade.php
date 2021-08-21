@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="bg-white overflow-hidden w-full">
-        <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="relative max-w-7xl mx-auto py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
             <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
             <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                 <div>
@@ -42,11 +42,15 @@
                     <div class="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1 text-justify pr-5">
                         <p>TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.</p>
                         <p>For both crowdfunding models, overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.</p>
-                        <p>In the Flexible (KIA) model, the project owner can claim funds at any time and there are no refunds for supporters.</p>
-                        <p>In the Fixed (AON) model, the project owner can only claim funds at the end of the project if the target has been reached. Supporters can claim a refund if the project has failed to achieve its target by the end date.</p>
-                        <p>Similar to Indiegogo, project owners can choose to either create a project based on the Flexible (KIA) model or the Fixed (AON) model.</p>
-                        <p>For this MVP, users are able to connect their wallets and support a project by pledging Tezos (using a testnet wallet for development purposes). The crowdfunding project will be updated with the new pledged total once the transaction is successful.</p>
-                        <p>The homepage is a demo of a sample Flexible (KIA) project created using the crowdfunding smart contract.</p>
+                        <p>In the Flexible (KIA) model, the project owner can claim funds at any time, and there are no refunds for supporters.</p>
+                        <p>In the Fixed (AON) model, the project owner can only claim funds at the end of the project if the target has been reached. However, supporters can claim a refund if the project has failed to achieve its target by the end date.</p>
+                        <p>Like Indiegogo, project owners can either create a project based on the Flexible (KIA) model or the Fixed (AON) model.</p>
+
+                        <h3>Demo</h3>
+                        <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
+                        <p>Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected).</p>
+                        <p>Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress.</p>
+
                         <p>Future features for Phase 2 if people are keen about TezCrowd:</p>
                         <ul role="list">
                             <li>Creation of a project standard similar to the FA2 contract standard</li>
