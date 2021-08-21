@@ -12,7 +12,7 @@ In the Flexible (KIA) model, the project owner can claim funds at any time, and 
 
 In the Fixed (AON) model, the project owner can only claim funds raised at the end of the project if the target goal has been reached. However, supporters can claim a refund if the project has failed to achieve its target goal by the end date.
 
-Like Indiegogo, project owners can either create a project based on the Flexible (KIA) model or the Fixed (AON) model.
+Similar to Indiegogo, project owners can create a project based on either the Flexible (KIA) model or the Fixed (AON) model.
 
 **<h3>Demo</h3>**
 
