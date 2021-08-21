@@ -81,8 +81,9 @@
                     <div class="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1 text-justify pr-5">
                         <p>TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.</p>
                         <p>The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary.</p>
-                        <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, the platform may still impose a low fundraiser fee to cover maintenance and upkeep costs.</p>
-                        <p>TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute funds raised. Progressive steps to decentralisation are required to balance the development and management needs of the platform.</p>
+                        <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%).</p>
+                        <p>TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised.</p>
+                        <p>Progressive steps to decentralisation are required to balance the development and management needs of the platform.</p>
 
                         <h3>Crowdfunding Models</h3>
                         <p>For both crowdfunding models (Keep-It-All and All-Or-Nothing), overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.</p>
@@ -98,7 +99,7 @@
 
                         <h3>Demo</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
-                        <p>Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected).</p>
+                        <p>Users can connect their wallets and support the sample project by pledging Tezos - for development purposes, a testnet wallet is used behind the scenes to send any tez (no matter which wallet has been connected).</p>
                         <p>Supporters of the project are also shown with their corresponding total amount pledged (by reading the smart contract's storage map [funders]).</p>
                         <p>Once an amount has been successfully pledged with the transaction recorded on the blockchain, the crowdfunding project will be automatically updated with the new progress.</p>
 
@@ -126,7 +127,7 @@
                             <li>Scenario: User is connected and inputs invalid pledge amount</li>
                             <p class="pl-7">Flash message requesting a valid amount.</p>
                             <li>Scenario: User is connected and inputs valid pledge amount</li>
-                            <p class="pl-7">Flash message showing transaction is being processed by the blockchain. This could take up to 20 seconds. Upon confirmation of a successful transaction, the in-process flash message will be replaced with a successful flash message.</p>
+                            <p class="pl-7">Flash message showing transaction is being processed by the blockchain. This could take up to 20 seconds. Upon confirmation of a successful transaction, the "in-process" flash message will be replaced with a "successful" flash message.</p>
                         </ol>
 
                         <h4>Future Considerations</h4>
@@ -135,12 +136,14 @@
                             <li>Creation of a project standard similar to the FA2 contract standard</li>
                             <li>Multiple projects creation and ledger system</li>
                             <li>Additional fields such as tags and categories</li>
+                            <li>User profiles showing past projects supported</li>
                         </ul>
                         <p>As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.</p>
                         <p>It is also likely that this project content is subject to frequent changes and updates along the course of the crowdfunding duration.</p>
                         <p>Furthermore, there is probably a need for additional features such as comments and favouriting to promote engagement with the project unless third-party apps such as Discourse are used.</p>
+                        <p>However, the use of 3rd-party apps has the downside of making it inconvenient for users and decreasing their engagement with the platform.</p>
                         <p>My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).</p>
-                        <p>A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency and efficiency of fees.</p>
+                        <p>A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency (of key information) and efficiency of fees.</p>
                         <p>More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.</p>
 
                         <h3>Who Made This</h3>
@@ -150,7 +153,7 @@
                             <li>Laravel and Tailwind CSS</li>
                             <li>Taquito, Beacon Wallet and Smartpy</li>
                         </ul>
-                        <p>Contract Address deployed on Florence Testnet: </br> KT1RjMpTDuSmoUj2gn2gaRpxqZPLkxk1VCu8</p>
+                        <p>Contract Address deployed on Florence Testnet: </br> <a href="https://better-call.dev/florencenet/KT1RjMpTDuSmoUj2gn2gaRpxqZPLkxk1VCu8/operations" target="_blank">KT1RjMpTDuSmoUj2gn2gaRpxqZPLkxk1VCu8</a></p>
                         <p>To view the crowdfunding smart contract for this project on Smartpy, click <a href="https://smartpy.io/ide?code=eJzVWFtv2zYUfvevINwHS4jt@BK3QTcHc4MVK4olwxDsZRgEWqJirZIokFQC79fvUKQulGjZ6tqHGXmIyMNz43e@c6QoySgTSEQJGUXqf55gJrIjwhzxbDR6gz4TkqFIIBzHyPn8aeeihAYkRjgN0A7WKEMPVByi9Bn9KjdGfow5R_eMvgZhngYOz@b3NBUM@8J9P0LwC0iIPC9KI@F5DidxOEX0NSVMb8ufXJ1LCadaKn@FqLm0VYvTjqwfeuKYEVN2MukKkjTwAiyIIQiey9RwgZPMWbjdUyISMTGX7OrxnubiEsEowc8XafRlSqN9Lkjg4YTmqdAOk3@srsKtQCiVbB3gCfmYhIK@ENY40CsvMHsmoqm@X15CgzBuBgryCc4c8YUcy@enXRAwwvkUiRcc5wRWH2hKXEOhOyoefwJ5Amk5ehmNUlFhzWcErtbLGP2b@KKJuGmJkGmFgKm61am6s6m6kakZXxOo2RyyFIVHx8zAXRX9EsJHgCIOerbj35QTWh9Kci7QnkBNMYLEAadouUBwaj52zVoA1_DcNLE1narkBQ3wUWUvpa_VcpR6a4jwyGVmC5k5DoJixVm7TbGbjZLriN1sXEvgVe3c1TYaET8dCNKpr8KlGUlRCNSBBSANw@IayWNG2F0DPza8O2HBx2lKTRt1bm82XStVcisr2woLFinFPppwLPsl42xLZNmusaCNrQKaZV@xxVYh0LKvSGKroDkYJr2lIq9aliYvqsSKc0vG7kqwuciWki5VXRUHWritT7TJxy6ezaOwcUgzSmEORymXjYcTudYIw7Sjj_xZSf4ly6Zv@8ruCIk5GWak0tLPXJK1T16IEX4FPOgX0KYnpjuqj88@iZns2VVzll27aOem7_Vdlz5Lta0icE_E2@o0214ktO1Ka7XV6WlMnLLehk6jCf3Qf2Nv5Dgze2Szcpz5HlmyVJGlPO62p6r5vLqaLKui_P9dVG9RMKLmyvME1ayJ3ePDxNZcLiKQ_oON_tTOeG@musxQH5Qjdp_kaCTTI@lawIDqpDiRHWHcxCx0OZmuYl8nCgdJlMp_dLY54Mr3Zf6d8U7u6c6I48gnp@Tknpbb071y1yL3ge61lH_ALI6IVepe7WlJ7pMUs4g2JMslR0kYYvPD0jFCNliueB0pXViCyvqdpIhPZk@Oli3T0Gz8pWVp3hojy0nA0FXPka33By9kNPFy4XuAD8etZ6pbtxpC5QUCdY_1CCon_zBiMBxpkxM9lMoNoCiO4C85orZMOR5MDkJk_P31Nac5AxfzlGfwbnYAgCfXuw9__Lz0j0_vDl8mrem2LsXbhevOWZ46SkM3WIilP84y@_N6sNAaNWFKCEFYLcMwM58_WfjSPbvauG4LJWtn_ATuIT9P8hiL6IXAIAnXmQC9IBoWLyNczj4kGH@lx6uFzervBVWhGZIzKbxB01cSFDMpXLNqKbU9TWs2Y_DmEwXw8BFD17KYeWhoF1RNDSqoWn1zlPgaG48F3IeqLu7oosptNV@jeFdG8YK7PaW7siydKt2GpuGF@9YsXOgvzcLlBNpIcKZyO0LfrnQ3m3bpGsFeWrirgWWwXlxwclDhViXULB9Itv4MtSehfL3zm1AiDXSuzqKzBX1bbhwYPxz5VCxBcq5Wi0sC1Y2vG@o7a6i_YCAmQKp_kHWsPhCok1MEs5gZ5AHzglWkrTbD2DmgNxVdDrgAJM0PCAPjkZ8PO_GUsfzXOAY4fuvqj0fDmAmcLDqKQmfp2drgKX37PVy1tiyd4qqWtuF8tenlK4iNnaOrtsz3ZKtOuJcy1no4Yw0t@S7IZfF9E6AzE099Q8EAkL8Fx_8FKZJ43w--" target="_blank">here</a>.</p>
                         <p>Old versions of contract addresses:</p>
                         <ul role="list">

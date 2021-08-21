@@ -6,9 +6,11 @@ TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the
 
 The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary. 
 
-The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%). However, the platform may still impose a low fundraiser fee to cover maintenance and upkeep costs.
+The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%).
 
-TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute funds raised. Progressive steps to decentralisation are required to balance the development and management needs of the platform. 
+TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised. 
+
+Progressive steps to decentralisation are required to balance the development and management needs of the platform. 
 
 ---
 
@@ -42,7 +44,7 @@ The demo site can be viewed at https://tezcrowd.com.
 
 There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo. 
  
-Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected). 
+Users can connect their wallets and support the sample project by pledging Tezos - for development purposes, a testnet wallet is used behind the scenes to send any tez (no matter which wallet has been connected). 
 
 Supporters of the project are also shown with their corresponding total amount pledged (by reading the smart contract's storage map [funders]).
 
@@ -74,7 +76,7 @@ Flash messages will appear depending on whether a wallet is connected, and the i
 3. Scenario: User is connected and inputs invalid pledge amount
     - Flash message requesting a valid amount.
 4. Scenario: User is connected and inputs valid pledge amount
-    - Flash message showing transaction is being processed by the blockchain. This could take up to 20 seconds. Upon confirmation of a successful transaction, the in-process flash message will be replaced with a successful flash message. 
+    - Flash message showing transaction is being processed by the blockchain. This could take up to 20 seconds. Upon confirmation of a successful transaction, the "in-process" flash message will be replaced with a "successful" flash message. 
 
 
 **<h4>Future Considerations</h4>**
@@ -82,7 +84,7 @@ Flash messages will appear depending on whether a wallet is connected, and the i
 Features planned for Phase 2 if people are keen about TezCrowd:
 
     Creation of a project standard similar to the FA2 contract standard
-    Multiple projects creation and ledger system
+    Multiple projects creation and ledger system for record keeping
     Additional fields such as tags and categories
     User profiles showing past projects supported
 
@@ -92,9 +94,11 @@ It is also likely that this project content is subject to frequent changes and u
 
 Furthermore, there is probably a need for additional features such as comments and favouriting to promote engagement with the project unless third-party apps such as Discourse are used.
 
+However, the use of 3rd-party apps has the downside of making it inconvenient for users and decreasing their engagement with the platform.
+
 My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).
 
-A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency and efficiency of fees.      
+A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency (of key information) and efficiency of fees.      
 
 More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.
 
