@@ -195,7 +195,7 @@ async function supportProject(){
                 $('.amount_raised_percentage').text(percentage_progress.toFixed(2) + '%');
 
                 $('.add_funds').val('');
-                $('.progress_bar').css('width', percentage_progress.toFixed(2) + '%')
+                $('.progress_bar').css('width', percentage_progress.toFixed(2) + '%');
 
                 $('.notification_container').find('.general_notification').remove();
                 $(successMessage).appendTo('.notification_container').fadeIn(2000);

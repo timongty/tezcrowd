@@ -100,3 +100,13 @@ Versions used for reference:
     php v7.4.19
     node v12.18.3
     npm v6.14.6
+    
+Main files for reference:
+
+    /resources/assets/js/tezos.js           - all tezos/taquito code will be here
+    /resources/views/home.blade.php         - homepage
+    /resources/views/pages/about.blade.php  - about page
+    /resources/views/partials               - partial files (flash messages, footer, nav etc)
+    /routes/web.php                         - route file
+    
+    
