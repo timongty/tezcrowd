@@ -73,6 +73,19 @@
                             </figcaption>
                         </figure>
                     </div>
+                    <div class="hidden sm:flex mt-48 relative text-base mx-auto max-w-prose lg:max-w-none">
+                        <figure>
+                            <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                <img class="rounded-lg shadow-lg object-cover object-center" src="https://source.unsplash.com/SHY-CKpYjrE?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="NYC is not a city, it's a world!" width="1184" height="1376">
+                            </div>
+                            <figcaption class="mt-3 flex text-sm text-gray-500">
+                                <svg class="flex-none w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="ml-2">Photograph by Saketh Garuda</span>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
                 <div class="mt-8 lg:mt-0">
                     <div class="text-base max-w-prose mx-auto lg:max-w-none">
@@ -90,7 +103,7 @@
 
                         <h3>Goals</h3>
                         <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO.</p>
-                        <p>This will help solidify the foundations of the project and serve to attract members to be part of the TezCrowd Dao.</p>
+                        <p>This will help solidify the foundations of the project and serve to attract members to be part of the DAO.</p>
                         <p>Thereafter, the focus will shift to onboard potential crowdfunding projects in the Tezos ecosystem and further develop the platform to phase 2 and beyond.</p>
 
                         <h3>Governance Mechanism</h3>
@@ -149,12 +162,13 @@
                         </ol>
 
                         <h4>Future Considerations</h4>
-                        <p>Features planned for Phase 2 if people are keen about TezCrowd:</p>
+                        <p>Features planned for Phase 2:</p>
                         <ul role="list">
                             <li>Creation of a project standard similar to the FA2 contract standard</li>
                             <li>Multiple projects creation and ledger system</li>
                             <li>Additional fields such as tags and categories</li>
                             <li>User profiles showing past projects supported</li>
+                            <li>DAO interface for user voting</li>
                         </ul>
                         <p>As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.</p>
                         <p>It is also likely that this project content is subject to frequent changes and updates along the course of the crowdfunding duration.</p>

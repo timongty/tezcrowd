@@ -25,7 +25,7 @@ With the implementation of TezCrowd DAO, I hope that this would lead to a higher
 
 For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO. 
 
-This will help solidify the foundations of the project and serve to attract members to be part of the TezCrowd Dao.
+This will help solidify the foundations of the project and serve to attract members to be part of the DAO.
 
 Thereafter, the focus will shift to onboard potential crowdfunding projects in the Tezos ecosystem and further develop the platform to phase 2 and beyond.
 
@@ -109,7 +109,7 @@ Flash messages will appear depending on whether a wallet is connected, and the i
 
 **<h4>Future Considerations</h4>**
 
-Features planned for Phase 2 if people are keen about TezCrowd:
+Features planned for Phase 2:
 
     Creation of a project standard similar to the FA2 contract standard
     Multiple projects creation and ledger system for record keeping
