@@ -79,11 +79,31 @@
                         <p class="text-lg text-gray-500">A decentralised crowdfunding platform for the community powered by the Tezos blockchain.</p>
                     </div>
                     <div class="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1 text-justify pr-5">
-                        <p>TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.</p>
+                        <p>TezCrowd DAO is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.</p>
                         <p>The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary.</p>
                         <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%).</p>
-                        <p>TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised.</p>
-                        <p>Progressive steps to decentralisation are required to balance the development and management needs of the platform.</p>
+                        <p>In the Tezos ecosystem, a decentralised crowdfunding platform will also serve to foster a shared community spirit together in support of new and exciting projects, NFT and otherwise.</p>
+                        <p>Through crowdfunding, project creators and developers (e.g. for a large-scale NFT avatar project) can lower their risk and gauge the market or community's response to their project based on tezos raised.</p>
+                        <p>In contrast, the other approach entails investing too much time or effort into a high-risk venture only to find lacklustre demand.</p>
+                        <p>With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing community.</p>
+
+                        <h3>Goals</h3>
+                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO.</p>
+                        <p>This will help solidify the foundations of the project and serve to attract members to be part of the TezCrowd Dao.</p>
+                        <p>Thereafter, the focus will shift to onboard potential crowdfunding projects in the Tezos ecosystem and further develop the platform to phase 2 and beyond.</p>
+
+                        <h3>Governance Mechanism</h3>
+                        <p>The TezCrowd DAO will allow members to decide the focus and direction of the decentralised crowdfunding platform.</p>
+                        <p>This is done through the following ways:</p>
+                        <ul>
+                            <li>Voting and approving new projects</li>
+                            <li>Approving and banning of members</li>
+                            <li>Voting for platform fees and respective distribution</li>
+                            <li>Voting to initiate new internally-funded projects</li>
+                            <li>Voting to support projects in funding and marketing</li>
+                        </ul>
+                        <p>TezCrowd DAO will progressively move from a one-man-operation to become primarily community-led to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised.</p>
+                        <p>I believe progressive steps to decentralisation are required to balance the development and management needs of the platform, especially in the early stages.</p>
 
                         <h3>Crowdfunding Models</h3>
                         <p>For both crowdfunding models (Keep-It-All and All-Or-Nothing), overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.</p>
@@ -93,9 +113,6 @@
                         <p>Similar to Indiegogo, TezCrowd project owners have the flexibility to decide whether their crowdfunding project will be based on either the Flexible (KIA) model or the Fixed (AON) model.</p>
                         <p>Reference: <a href="https://d1wqtxts1xzle7.cloudfront.net/64058657/6b70daa57c49c0cae93594a0892f8f4632e2-with-cover-page-v2.pdf?Expires=1629575774&Signature=g6tEbKrllidoSLb6E1bbhYZW1JSZj1I~9ABpJdr6iCEtE9eyc2vGgm3cz1xK42EhqrF1q5eIf2BghMQFgPYbiLSxm1pc1CJlnIOFBbbr9WHK7fYv6MzXDxLgXK~6ZkDYc0OPoX8Vbebe8n1lFFz3FQZF87wzbXOjfu2jjmOtpTEwNS-qyQt0T2U8WXdX8iw07xmLjCJjTcEI6qPkgb6XGh2E9Bx4o5wES5aU~B5-Qi8jTaiQlz2MlWnSGvBS9i1xqjaRwS74GIqjD0W-LKenGJmA2o3dEyXMlLptvX5nHx67kMDnVbt248rStZQKKNUpBw~YIAMlDFEeMRgsP-Ix-w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">Schwienbacher, A. (2000). Crowdfunding Models: Keep-it-All vs. All-or-Nothing. SSRN Electronic Journal.</a></p>
 
-                        <h3>Goals</h3>
-                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain.</p>
-                        <p>After that, the focus will shift to attract new members to be part of the TezCrowd DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.</p>
 
                         <h3>Demo</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>

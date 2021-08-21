@@ -2,23 +2,49 @@
 
 A decentralised crowdfunding platform for the community powered by the Tezos blockchain.
 
-TezCrowd is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.
+TezCrowd DAO is a MVP prototype of a crowdfunding smart contract comprising both the Flexible (Keep-It-All) crowdfunding model and the Fixed (All-Or-Nothing) crowdfunding model.
 
 The largest benefits of a decentralised crowdfunding platform would be greater transparency and efficiency of fees. With no intermediaries involved, it becomes easier to ensure that the funds raised are spent appropriately and to track them if necessary. 
 
 The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%).
 
-TezCrowd will eventually be community-led with a DAO to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised. 
+In the Tezos ecosystem, a decentralised crowdfunding platform will also serve to foster a shared community spirit together in support of new and exciting projects, NFT and otherwise.
 
-Progressive steps to decentralisation are required to balance the development and management needs of the platform. 
+Through crowdfunding, project creators and developers (e.g. for a large-scale NFT avatar project) can lower their risk and gauge the market or community's response to their project based on tezos raised.
+
+In contrast, the other approach entails investing too much time or effort into a high-risk venture only to find lacklustre demand.
+
+With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing community.
+
 
 ---
 
 **<h3>Goals</h3>**    
 
-For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain. 
+For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO. 
 
-After that, the focus will shift to attract new members to be part of the DAO and onboard potential crowdfunding projects in the Tezos ecosystem and wider web3 space.
+This will help solidify the foundations of the project and serve to attract members to be part of the TezCrowd Dao.
+
+Thereafter, the focus will shift to onboard potential crowdfunding projects in the Tezos ecosystem and further develop the platform to phase 2 and beyond.
+
+---
+
+**<h3>Governance Mechanism</h3>**    
+
+The TezCrowd DAO will allow members to decide the focus and direction of the decentralised crowdfunding platform.
+
+This is done through the following ways:
+
+- Voting and approving new projects
+- Approving and banning of members
+- Voting for platform fees and respective distribution
+- Voting to initiate new internally-funded projects
+- Voting to support projects in funding and marketing
+
+TezCrowd will eventually be primarily community-led to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised. 
+
+Progressive steps to decentralisation are required to balance the development and management needs of the platform especially in the early stages. 
+
 
 ---
 
@@ -87,6 +113,7 @@ Features planned for Phase 2 if people are keen about TezCrowd:
     Multiple projects creation and ledger system for record keeping
     Additional fields such as tags and categories
     User profiles showing past projects supported
+    DAO interface for user voting 
 
 As most crowdfunding projects require a substantial amount of text and multimedia (images and videos) to draw support for their cause, there must also be some consideration as to whether this content should be stored on the blockchain with ipfs or stored off-chain.
 
