@@ -102,7 +102,7 @@
                         <p>With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing community.</p>
 
                         <h3>Goals</h3>
-                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO.</p>
+                        <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO white paper.</p>
                         <p>This will help solidify the foundations of the project and serve to attract members to be part of the DAO.</p>
                         <p>Thereafter, the focus will shift to onboard potential crowdfunding projects in the Tezos ecosystem and further develop the platform to phase 2 and beyond.</p>
 
@@ -119,7 +119,7 @@
                         <p>TezCrowd DAO will progressively move from a one-man-operation to become primarily community-led to collectively decide on new crowdfunding projects, manage members, and distribute any internal funds raised.</p>
                         <p>I believe progressive steps to decentralisation are required to balance the development and management needs of the platform, especially in the early stages.</p>
 
-                        <h3>Crowdfunding Models</h3>
+                        <h3>Crowdfunding Models on the Smart Contract</h3>
                         <p>For both crowdfunding models (Keep-It-All and All-Or-Nothing), overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.</p>
                         <p>In the Flexible (KIA) model, the project owner can claim funds at any time, and there are no refunds for supporters.</p>
                         <p>In the Fixed (AON) model, the project owner can only claim funds at the end of the project if the target has been reached. However, supporters can claim a refund if the project has failed to achieve its target by the end date.</p>
@@ -128,7 +128,7 @@
                         <p>Reference: <a href="https://d1wqtxts1xzle7.cloudfront.net/64058657/6b70daa57c49c0cae93594a0892f8f4632e2-with-cover-page-v2.pdf?Expires=1629575774&Signature=g6tEbKrllidoSLb6E1bbhYZW1JSZj1I~9ABpJdr6iCEtE9eyc2vGgm3cz1xK42EhqrF1q5eIf2BghMQFgPYbiLSxm1pc1CJlnIOFBbbr9WHK7fYv6MzXDxLgXK~6ZkDYc0OPoX8Vbebe8n1lFFz3FQZF87wzbXOjfu2jjmOtpTEwNS-qyQt0T2U8WXdX8iw07xmLjCJjTcEI6qPkgb6XGh2E9Bx4o5wES5aU~B5-Qi8jTaiQlz2MlWnSGvBS9i1xqjaRwS74GIqjD0W-LKenGJmA2o3dEyXMlLptvX5nHx67kMDnVbt248rStZQKKNUpBw~YIAMlDFEeMRgsP-Ix-w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA" target="_blank">Schwienbacher, A. (2000). Crowdfunding Models: Keep-it-All vs. All-or-Nothing. SSRN Electronic Journal.</a></p>
 
 
-                        <h3>Demo</h3>
+                        <h3>Demo MVP</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
                         <p>Users can connect their wallets and support the sample project by pledging Tezos - for development purposes, a testnet wallet is used behind the scenes to send any tez (no matter which wallet has been connected).</p>
                         <p>Supporters of the project are also shown with their corresponding total amount pledged (by reading the smart contract's storage map [funders]).</p>

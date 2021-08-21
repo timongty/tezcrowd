@@ -23,7 +23,7 @@ With the implementation of TezCrowd DAO, I hope that this would lead to a higher
 
 **<h3>Goals</h3>**    
 
-For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO. 
+For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO white paper. 
 
 This will help solidify the foundations of the project and serve to attract members to be part of the DAO.
 
@@ -50,7 +50,7 @@ Progressive steps to decentralisation are required to balance the development an
 
 ---
 
-**<h3>Crowdfunding Models</h3>**
+**<h3>Crowdfunding Models on the Smart Contract</h3>**
 
 For both crowdfunding models (Keep-It-All and All-Or-Nothing), overfunding beyond the target amount is allowed, and the project end date must be set within a limit of 3 to 45 days.
 
