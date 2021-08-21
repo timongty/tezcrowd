@@ -97,9 +97,9 @@
                         <p>The use of smart contracts also eliminates most of the fees involved in conventional crowdfunding platforms, such as the fundraiser fee (approx 5 to 8%) and the payment processor fee (approx 2.9%).</p>
                         <p>In the Tezos ecosystem, a decentralised crowdfunding platform will also serve to foster a shared community spirit together in support of new and exciting projects, NFT and otherwise.</p>
                         <p>Through crowdfunding, project creators and developers (e.g. for a large-scale NFT avatar project) can lower their risk and gauge the market or community's response to their project based on tezos raised.</p>
-                        <p>In contrast, the other approach entails investing too much time or effort into a high-risk venture only to find lacklustre demand.</p>
-                        <p>Over time and with more members, the DAO will allow insights into what is valued by the community and shape the direction of new initiatives and ventures.</p>
-                        <p>With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing community.</p>
+                        <p>In contrast, the conventional approach entails investing too much time or effort into a high-risk venture only to find lacklustre demand.</p>
+                        <p>Over time and with more members, the DAO will allow insights into what is truly valued by the community and shape the direction of new initiatives and ventures.</p>
+                        <p>With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing supportive community.</p>
 
                         <h3>Goals</h3>
                         <p>For this MVP, my focus is to first establish a proof-of-concept for decentralised crowdfunding on the Tezos blockchain and establish an outline of the TezCrowd DAO white paper.</p>
@@ -174,7 +174,7 @@
                         <p>It is also likely that this project content is subject to frequent changes and updates along the course of the crowdfunding duration.</p>
                         <p>Furthermore, there is probably a need for additional features such as comments and favouriting to promote engagement with the project unless third-party apps such as Discourse are used.</p>
                         <p>However, the use of 3rd-party apps has the downside of making it inconvenient for users and decreasing their engagement with the platform.</p>
-                        <p>My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements will be stored off-chain (e.g. in a mysql database).</p>
+                        <p>My preliminary approach is to adopt a hybrid decentralised model where only essential core unchangeable elements are stored on-chain. In contrast, non-essential and frequently changed elements, such as the afore-mentioned comments and long-form project content, will be stored off-chain (e.g. in a mysql database).</p>
                         <p>A hybrid model will help address the main issues mentioned above without compromising the main benefits of a decentralised crowdfunding platform which lie in the high transparency (of key information) and efficiency of fees.</p>
                         <p>More advanced features such as a milestone tracker managed by the DAO or supporters of the project can also be explored and discussed together with the community in future.</p>
 
