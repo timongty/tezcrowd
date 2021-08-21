@@ -14,6 +14,8 @@ Through crowdfunding, project creators and developers (e.g. for a large-scale NF
 
 In contrast, the other approach entails investing too much time or effort into a high-risk venture only to find lacklustre demand.
 
+Over time and with more members, the DAO will allow insights into what is valued by the community and shape the direction of new initiatives and ventures.
+
 With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing community.
 
 

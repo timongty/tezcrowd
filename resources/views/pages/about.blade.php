@@ -85,6 +85,7 @@
                         <p>In the Tezos ecosystem, a decentralised crowdfunding platform will also serve to foster a shared community spirit together in support of new and exciting projects, NFT and otherwise.</p>
                         <p>Through crowdfunding, project creators and developers (e.g. for a large-scale NFT avatar project) can lower their risk and gauge the market or community's response to their project based on tezos raised.</p>
                         <p>In contrast, the other approach entails investing too much time or effort into a high-risk venture only to find lacklustre demand.</p>
+                        <p>Over time and with more members, the DAO will allow insights into what is valued by the community and shape the direction of new initiatives and ventures.</p>
                         <p>With the implementation of TezCrowd DAO, I hope that this would lead to a higher number of successful projects started on the Tezos blockchain driven by an ever-growing community.</p>
 
                         <h3>Goals</h3>
