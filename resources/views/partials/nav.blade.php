@@ -14,6 +14,9 @@
                     <a href="{{ route('about') }}" class="{{ \Request::route()->getName() == 'about' ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                         About
                     </a>
+                    <a href="#" class="disconnect_wallet border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Disconnect
+                    </a>
 {{--                    <a href="{{ route('show_all_projects') }}" class="{{ \Request::route()->getName() == 'show_all_projects' ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700' }} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">--}}
 {{--                        All Projects--}}
 {{--                    </a>--}}

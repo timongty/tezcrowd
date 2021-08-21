@@ -73,7 +73,7 @@
                 <div class="mt-2">
                     <h3 class="font-semibold mb-3">Supporters:</h3>
                     <div class="supporters">
-                    
+
                     </div>
 
                 </div>

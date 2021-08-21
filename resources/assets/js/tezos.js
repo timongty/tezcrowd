@@ -71,14 +71,16 @@ const tezos  = new TezosToolkit("https://florencenet.api.tez.ie");
 
 
 // connect wallet button
-var connect_wallet_button = document.getElementsByClassName("connect_wallet")[0];
-connect_wallet_button.addEventListener('click', () => {
+$('.connect_wallet').on('click', () => {
     connectWallet();
 });
 
+$('.disconnect_wallet').on('click', () => {
+    disconnectWallet();
+});
+
 // pledge to project button
-var pledge_button = document.getElementsByClassName("pledge")[0];
-pledge_button.addEventListener('click', () => {
+$('.pledge').on('click', () => {
 
     var pledge_amount = $('.add_funds').val();
 
@@ -107,9 +109,10 @@ async function checkState(){
         // User already has account connected, everything is ready
         console.log("Connected:", active_account.address);
         const truncated_wallet_address = active_account.address.slice(0, 5) + '...' + active_account.address.slice(active_account.address.length - 5);
-        $('.connect_wallet').text(truncated_wallet_address).removeClass('connect_wallet cursor-pointer');
+        $('.connect_wallet').text(truncated_wallet_address).removeClass('connect_wallet cursor-pointer').addClass('nav_wallet_address');
         return active_account;
     } else {
+        $('.disconnect_wallet').addClass('hidden');
         console.log("Not connected");
     }
 }
@@ -168,21 +171,32 @@ async function connectWallet(){
         });
 
         tezos.setWalletProvider(wallet);
+
+        // UI Changes
+
         const wallet_address = await wallet.getPKH();
         const truncated_wallet_address = wallet_address.slice(0, 5) + '...' + wallet_address.slice(wallet_address.length - 5);
-        $('.connect_wallet').text(truncated_wallet_address).removeClass('connect_wallet cursor-pointer');
+        $('.connect_wallet').text(truncated_wallet_address).removeClass('connect_wallet cursor-pointer').addClass('nav_wallet_address');
+        $('.pledge').removeAttr('disabled').removeClass('cursor-not-allowed');
+        $('.disconnect_wallet').removeClass('hidden');
 
     } catch (error){
         console.log(error);
     }
 }
 
-// const disconnect = () => {
-//     wallet.client.destroy();
-//     wallet = 'undefined';
-//     wallet_address = '';
-// }
+async function disconnectWallet(){
+    try{
 
+        console.log('disconnect wallet');
+        await wallet.clearActiveAccount();
+        $('.disconnect_wallet').addClass('hidden');
+        $('.nav_wallet_address').text('Connect Wallet').addClass('connect_wallet cursor-pointer').removeClass('nav_wallet_address');
+
+    } catch(error){
+        console.log(error);
+    }
+}
 
 async function supportProject(){
     try{
