@@ -35,7 +35,7 @@ More advanced features such as a milestone tracker managed by a DAO or supporter
 
 **<h3>Smart Contract Entrypoints</h3>**
 
-The crowdfunding has 4 entrypoints.
+The crowdfunding smart contract has 4 entrypoints.
 
 1. Create Project - Initialise a new crowdfunding project
     
@@ -43,9 +43,9 @@ The crowdfunding has 4 entrypoints.
     
     Output: Blockchain state updated to reflect the project.
     
-2. Add Funds - For supporters to pledge tezos to the project
+2. Add Funds - For supporters to pledge tezos to the project (a supporter is allowed to pledge multiple times to the same project)
 
-    Input: Supporter's pledged amount in tez. Verify that the project is still ongoing and has not closed. Add supporter and pledged amount to a map of funders for record; increment pledged amount if supporter already exists in the map of funders.
+    Input: Supporter's pledged amount in tez. This method will verify that the project is still ongoing and has not ended; it will also add the supporter and pledged amount to a map of funders for record (if the supporter already exists in the map of funders, his total contributed amount will increase with the new pledge amount).
     
     Output: Project state (contributed_amount, leftover_amount) updated to reflected new pledged amount. 
 
@@ -63,12 +63,13 @@ The crowdfunding has 4 entrypoints.
 
 **<h3>Who Made This</h3>**
 
-TezCrowd is designed and built by @timongty, an indie maker with other projects such as Galleseum, a blockchain-agnostic NFT gallery platform.
+TezCrowd is designed and built by @timongty (https://twitter.com/timongty), an indie maker with other projects such as Galleseum, a blockchain-agnostic NFT gallery platform.
 
 Frameworks and tools used:
 
     Laravel and Tailwind CSS
     Taquito, Beacon Wallet and Smartpy
+    Webpack, npm
 
 Contract Address deployed on Florence Testnet:
 KT1RjMpTDuSmoUj2gn2gaRpxqZPLkxk1VCu8
@@ -80,7 +81,7 @@ Old versions of contract addresses:
 
 **<h3>Initialising this project</h3>**
 
-To initialise this project, please make sure to install all dependencies first.
+To initialise this project, please make sure to install all dependencies after cloning the project.
  
     npm install
     composer install
