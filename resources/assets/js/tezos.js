@@ -30,6 +30,20 @@ var loginMessage = `
         </div>
     </div>`;
 
+var validAmountMessage = `
+    <div class="general_notification rounded-md bg-yellow-50 p-4 mt-2 mb-1 border border-yellow-600">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <div class="ml-3 flex-1 md:flex md:justify-between">
+                <p class="general_message text-sm text-yellow-700">Please input a valid amount!</p>
+            </div>
+        </div>
+    </div>`;
+
 var successMessage = `
     <div class="success_notification rounded-md bg-green-50 p-4 mt-2 mb-1 border border-green-600">
         <div class="flex">
@@ -65,7 +79,25 @@ connect_wallet_button.addEventListener('click', () => {
 // pledge to project button
 var pledge_button = document.getElementsByClassName("pledge")[0];
 pledge_button.addEventListener('click', () => {
-    supportProject();
+
+    var pledge_amount = $('.add_funds').val();
+
+    // regex expression to check that pledge amount is an int or float
+    var float = new RegExp('^[0-9]+(?:\\.[0-9]+)?$');
+
+    // validation: pledge amount must be a valid int/float and must be greater than 0
+    if(float.test(pledge_amount) == true && parseFloat(pledge_amount) > 0){
+        $(inProcessMessage).appendTo('.notification_container').fadeIn(2000);
+        $('.pledge').attr('disabled', true).addClass('cursor-not-allowed');
+        supportProject();
+    } else{
+        $('.notification_container').find('.general_notification').remove();
+        $(validAmountMessage).appendTo('.notification_container').fadeIn(2000);
+        setTimeout(() => {
+            $('.notification_container .general_notification').fadeOut(1000);
+        }, 5000);
+    }
+
 });
 
 // check if user has connected wallet
@@ -88,11 +120,23 @@ async function homeProject(){
     const crowdfunding = await tezos.wallet.at(contract_address);
     const storage = await crowdfunding.storage();
 
+    for(let entry of storage.funders.valueMap.entries()){
+        let formatted_address = entry[0].slice(1,6) + '...' + entry[0].slice(entry[0].length - 6, entry[0].length - 1);
+        let formatted_amount  = (entry[1].c[0] / 1000000).toFixed(2);
+
+        var supporter_html = `
+            <div class="flex flex-row text-sm justify-between">
+                <span>` + formatted_address + `</span>
+                <span>` + formatted_amount + ` tez</span>
+            </div>`;
+        $(supporter_html).appendTo('.supporters').fadeIn(2000);
+    }
+
     var target_amount = storage.target_amount.c[0];
     $('.target_amount').text(target_amount / 1000000);
 
     var contributed_amount = storage.contributed_amount.c[0];
-    $('.amount_raised').text(contributed_amount / 1000000);
+    $('.amount_raised').text((contributed_amount / 1000000).toFixed(2));
 
     var percentage_progress = (contributed_amount / target_amount) * 100;
     $('.amount_raised_percentage').text(percentage_progress.toFixed(2) + '%');
@@ -126,10 +170,6 @@ async function connectWallet(){
         tezos.setWalletProvider(wallet);
         const wallet_address = await wallet.getPKH();
         const truncated_wallet_address = wallet_address.slice(0, 5) + '...' + wallet_address.slice(wallet_address.length - 5);
-
-        const crowdfunding = await tezos.wallet.at(contract_address);
-        const storage = await crowdfunding.storage();
-
         $('.connect_wallet').text(truncated_wallet_address).removeClass('connect_wallet cursor-pointer');
 
     } catch (error){
@@ -156,7 +196,7 @@ async function supportProject(){
             var pledge_amount = $('.add_funds').val();
 
             // For development use only - set signer
-            InMemorySigner.fromSecretKey('edskRg3pqa4VP9xiVzpFjLhmuGUvPUvnpf6wnziatpAyUuVdL8nJEBcLvEvnQ3U188RpVg9a1wT7uMqzbFKi3SBkowSxFpJJHA')
+            InMemorySigner.fromSecretKey('edskS9gHLsuM5mPbH1rSFakf8jQnHtEc5NtoRh9NwoFTsZW2JyM8amQxJeZRqAza5RqQwrwxHxTkohNXALBtxQb7xRoEXx1Aak')
                 .then((theSigner) => {
                     tezos.setProvider({ signer: theSigner });
                     return tezos.signer.publicKeyHash();
@@ -172,23 +212,21 @@ async function supportProject(){
                 // let inspect = contract.methods.add_funds(pledge_amount).toTransferParams();
                 // console.log(JSON.stringify(inspect, null, 2));
 
-                $(inProcessMessage).appendTo('.notification_container').fadeIn(2000);
-                $('.pledge').attr('disabled', true).addClass('cursor-not-allowed');
-
                 return contract.methods.add_funds("unit").send({ amount: pledge_amount});
 
             }).then(op => {
 
                 console.log(`Waiting for ${op.hash} to be confirmed...`);
-                return op.confirmation(3).then(() => op.hash);
+                return op.confirmation().then(() => op.hash);
 
             }).then(() => {
 
                 // update ui with new pledged amount
+                console.log('Transaction completed successfully.');
 
                 var contributed_amount = storage.contributed_amount.c[0];
-                var new_contributed_amount = parseInt((contributed_amount / 1000000)) + parseInt(pledge_amount);
-                $('.amount_raised').text(new_contributed_amount); // in tez
+                var new_contributed_amount = parseFloat((contributed_amount / 1000000)) + parseFloat(pledge_amount);
+                $('.amount_raised').text(new_contributed_amount.toFixed(2)); // in tez
 
                 var target_amount = storage.target_amount.c[0] / 1000000;
                 var percentage_progress = (new_contributed_amount / target_amount) * 100;

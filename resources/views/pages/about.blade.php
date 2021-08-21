@@ -49,6 +49,7 @@
                         <h3>Demo</h3>
                         <p>There is one sample crowdfunding project with the Flexible (Keep-it-all) Model on the homepage created through the smart contract for this demo.</p>
                         <p>Users can connect their wallets and support the sample project by pledging Tezos - a testnet wallet is used behind the scenes for development purposes (no matter which wallet has been connected).</p>
+                        <p>Supporters of the project are also shown with their corresponding amount pledged by reading the smart contract's storage map (funders).</p>
                         <p>Once the amount has been successfully pledged, the crowdfunding project will be automatically updated with the new progress.</p>
 
                         <p>Future features for Phase 2 if people are keen about TezCrowd:</p>
@@ -56,7 +57,6 @@
                             <li>Creation of a project standard similar to the FA2 contract standard</li>
                             <li>Multiple projects creation and ledger system</li>
                             <li>Additional fields such as tags and categories</li>
-                            <li>Show project supporters and amount pledged</li>
                         </ul>
                         <p>More advanced features such as a milestone tracker managed by a DAO or supporters of the project can be explored in future.</p>
                         <h3>Who Made This</h3>

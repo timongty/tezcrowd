@@ -67,6 +67,16 @@
                         Pledge
                     </button>
                 </div>
+
+                <div class="border-t border-gray-300 mt-6 mb-4"></div>
+
+                <div class="mt-2">
+                    <h3 class="font-semibold mb-3">Supporters:</h3>
+                    <div class="supporters">
+                    
+                    </div>
+
+                </div>
             </div>
 
         </div>
